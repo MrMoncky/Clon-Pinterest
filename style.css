@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .barra {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding-right: 10px;
+    background-color: white;
+  }
+
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+
+  .pin {
+    flex-grow: 1;
+    background-color: rgba(200, 24, 24, 0);
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .create {
+    flex-grow: 1;
+    background-color: lightgray;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .home {
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .iconos {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .search-bar {
+    flex-grow: 6;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: rgba(164, 164, 164, 0.193);
+  }
+
+  .search-bar1 {
+    flex-grow: 6;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 1px;
+    background-color: transparent;
+  }
+
+/* Style del Contenido */
+
+  .carta-1 {
+    position: relative;
+    width: 235px;
+    height: 332px;
+    border-radius: 15px;
+    background-color: transparent;
+
+  }
+
+  .imagen-principal {
+    width: 235px;
+    height: 332px;
+    object-fit: contain;
+  }
+
+
+  .contenido-carta-1 {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition-duration: .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(74, 74, 74, 0.232);
+    width: 235px;
+    height: 332px ;
+    border-radius: 15px;
+    color: whitesmoke;
+    padding: 15px;
+
+  }
+  
+
+  .profile {
+    align-self: flex-start;
+    margin-right: 70px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: whitesmoke;
+    cursor: pointer;
+
+  }
+
+  .save {
+    align-self: flex-start;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: red;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .tres-puntos {
+    align-self: flex-end;
+    margin: 5px;
+    padding: 1px 3px;
+    border-radius: 50%;
+    border-style: none;
+    background-color:white;
+    color: whitesmoke;
+    cursor: pointer;
+  } 
+
+  .subir {
+    align-self: flex-end;
+    margin: 5px;
+    margin-left: 130px;
+    padding: 1px 3px;
+    border-radius: 50%;
+    border-style: none;
+    background-color:white;
+    color: whitesmoke;
+    cursor: pointer;
+  } 
+
+  .carta-1:hover .contenido-carta-1 {
+      opacity: 1;
+  }
+
+  .contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    padding-top: 75px;
+    padding-right: 10px;
+    gap: 25px;
+
+  }
+
+  @media
+  (min-width: 600px) and
+  (max-width: 1200px) {
+    .contenido {
+      gap: 35px;
+    }
+
+  }
+
+
+
+  
